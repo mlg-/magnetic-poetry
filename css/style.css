@@ -1,0 +1,129 @@
+/* Magentic Poetry Style Sheet
+*/
+
+/*-------------------------------------------------------------------------------------------------
+Layout
+-------------------------------------------------------------------------------------------------*/
+body {
+font-family: 'Lato', sans-serif;
+font-size: 28px;
+background-image: url('../images/tile2.jpg');
+background-size: 50%;
+}
+
+p {
+	font-size: 12px;
+}
+
+.heading-box{
+	background-color: rgba(255, 255, 255, 0.7);
+	width: 400px;
+	margin: 20px 50px;
+	border: 2px solid #5C6485;
+	float: left;
+}
+
+#wrapper {
+	min-height: 1100px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#wrapper input[type="button"]{
+	display: inline-block;
+	margin-bottom: 20px;
+}
+
+#words {
+	background-image: url('../images/fridge.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 500px;
+	height: 1005px;
+	margin: 0 auto 0 50px;
+	float:left;
+}
+
+#words-container{
+	width: 710px;
+	min-height: 1450px;
+	position: absolute;
+}
+
+.magnet {
+	background-color: black;
+	color: white;
+	font-family: 'Courier New';
+	font-size: 22px;
+	line-height: 120%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	max-width: 300px;
+	border: 2px #ccc solid;
+}
+
+input.poem-title {
+  position: absolute;
+  left: 150px;
+  top: 50px;
+  width: 200px;
+  line-height: 2em;
+}
+
+#poem-title {
+	font-size: 26px;
+	color: #5C6485;
+	font-weight: bold;
+	max-width: 300px;
+	background-color: white;
+	border: 2px #ccc solid;
+}
+
+/*-------------------------------------------------------------------------------------------------
+Buttons
+-------------------------------------------------------------------------------------------------*/
+.btn {
+  background: #a570ba;
+  background-image: -webkit-linear-gradient(top, #a570ba, #742bb8);
+  background-image: -moz-linear-gradient(top, #a570ba, #742bb8);
+  background-image: -ms-linear-gradient(top, #a570ba, #742bb8);
+  background-image: -o-linear-gradient(top, #a570ba, #742bb8);
+  background-image: linear-gradient(to bottom, #a570ba, #742bb8);
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+/*-------------------------------------------------------------------------------------------------
+Tooltips 
+-------------------------------------------------------------------------------------------------*/
+a.tooltip {outline:none; }
+a.tooltip strong {line-height:30px;}
+a.tooltip:hover {text-decoration:none;} 
+a.tooltip span {
+    z-index:10;display:none; padding:14px 20px;
+    margin-top:-30px; margin-left:28px;
+    width:300px; line-height:16px;
+}
+a.tooltip:hover span{
+    display:inline; position:absolute; color:#111;
+    border:1px solid #DCA; background:#fffAF0;}
+.callout {z-index:20;position:absolute;top:30px;border:0;left:-12px;}
+    
+/*CSS3 extras*/
+a.tooltip span
+{
+    border-radius:4px;
+    box-shadow: 5px 5px 8px #CCC;
+}
