@@ -14,10 +14,11 @@ function randomWordGenerator(){
 		var randomNum = Math.floor((Math.random() * 4) + 1);
 
 		var flarfFlag = flarfMode.getFlarf();
-		if (flarfFlag = true){
+		console.log(flarfFlag);
+		if (flarfFlag == true){
 			var dictionaryDef = false;
 			var frequency = 0;
-			var verbType = 'verb-intrasitive';
+			var verbType = 'verb-intransitive';
 			var nounType = 'idiom';
 		} else {
 			var dictionaryDef = true;
@@ -41,6 +42,7 @@ function randomWordGenerator(){
 		      			},
 		      success: function(data){
 		      	randomWordComplete(data);
+		      	console.log(data);
 		      }
 		  	});
 			}
@@ -59,6 +61,7 @@ function randomWordGenerator(){
 		      			},
 		      success: function(data){
 		      	randomWordComplete(data);
+		      	console.log(data);
 		      }
 		  	});		
 			}
@@ -77,6 +80,7 @@ function randomWordGenerator(){
 		      			},
 		      success: function(data){
 		      	randomWordComplete(data);
+		      	console.log(data);
 		      }
 		  	});
 		}
@@ -94,6 +98,8 @@ function randomWordGenerator(){
 			   "upon", "beneath", "behind", "without", "across", "s", "ed", "d"]; 
 		  var randomWord = fillerPartsOfSpeech[Math.floor(Math.random()*fillerPartsOfSpeech.length)];
 	  	randomWordComplete(randomWord);
+	  			      	console.log(randomWord);
+
 	  }
 }
 
@@ -117,6 +123,7 @@ function randomWordComplete(data) {
   } else {
 	  var word = data;
 	}
+	console.log(word);
 	var magNumber = magnetCounter();
   $('#words-container').prepend('<span class="magnet" id="magnet' + magNumber + '">' + word + '</span>');
   $('#magnet'+magNumber).draggable({ containment: "wrapper" });
