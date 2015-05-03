@@ -45,8 +45,8 @@ p {
 }
 
 #words-container{
-	width: 710px;
-	min-height: 1450px;
+	width: 500px;
+	height: 1100px;
 	position: absolute;
 }
 
